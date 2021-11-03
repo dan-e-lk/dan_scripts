@@ -13,6 +13,8 @@ def main(in_folder, out_folder):
 	if in_folder != out_folder:
 		try:
 			shutil.rmtree(out_folder)
+		except:
+			pass
 		shutil.copytree(in_folder, out_folder)
 
 	# get a list of full path of all the html files
